@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="504.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anton.contactbook.ContactsWindowController">
+   <children>
+      <Label fx:id="Label1" layoutY="-1.0" prefHeight="161.0" prefWidth="504.0" style="-fx-background-color: #FF6347; -fx-padding: 22 0 0 0;" text="    Список контактів">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="iconButton1" layoutX="451.0" minWidth="45.0" mnemonicParsing="false" onAction="#onIconButton1Click" prefHeight="67.0" prefWidth="45.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: transparent;" text=".">
+         <graphic>
+            <ImageView fx:id="iconImageView1" fitHeight="73.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <Pane fx:id="Pane1" layoutX="1.0" layoutY="154.0" prefHeight="459.0" prefWidth="504.0" visible="false">
+         <children>
+            <ScrollPane fx:id="ScrollPane1" hbarPolicy="NEVER" layoutY="31.0" prefHeight="347.0" prefWidth="504.0">
+               <content>
+                  <VBox fx:id="buttonContainer" prefWidth="504.0" spacing="5.0" />
+               </content>
+            </ScrollPane>
+            <Button fx:id="iconButton" layoutX="433.0" layoutY="395.0" minHeight="15.0" minWidth="53.0" mnemonicParsing="false" onAction="#onIconButtonClick" prefHeight="41.0" prefWidth="53.0" style="-fx-background-radius: 28;">
+               <graphic>
+                  <ImageView fx:id="iconImageView" fitHeight="60.0" fitWidth="60.0" preserveRatio="true" />
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane2" layoutX="1.0" layoutY="157.0" prefHeight="453.0" prefWidth="504.0">
+         <children>
+            <Button fx:id="iconButton6" layoutX="-110.0" layoutY="-7.0" minHeight="53.0" minWidth="53.0" mnemonicParsing="false" onAction="#handleLoadImage2" prefHeight="55.0" prefWidth="55.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-cursor: hand;" translateX="130.0" translateY="30.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <graphic>
+                  <Circle fx:id="Circle2" fill="DODGERBLUE" radius="28.0" stroke="WHITE" strokeWidth="0.0" />
+               </graphic>
+            </Button>
+            <Button fx:id="SaveButton" layoutX="380.0" layoutY="380.0" mnemonicParsing="false" onAction="#onSaveButtonClick" prefHeight="60.0" prefWidth="124.0" style="     -fx-background-color: linear-gradient(to right, #FF7F32, #FF5722);     -fx-text-fill: #FFFFFF;     -fx-font-size: 18px;     -fx-font-weight: normal;     -fx-padding: 10 20;     -fx-background-radius: 15;     -fx-cursor: hand;     -fx-border-width: 1;     -fx-border-radius: 15;     -fx-border-color: #FF5722;     -fx-shadow-highlight-color: transparent;     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 1, 1);" text="Зберегти">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonBack" layoutX="-2.0" layoutY="380.0" mnemonicParsing="false" onAction="#onButtonBackClick" prefHeight="60.0" prefWidth="100.0" style="     -fx-background-color: linear-gradient(to right, #FF7F32, #FF5722);     -fx-text-fill: #FFFFFF;     -fx-font-size: 18px;     -fx-font-weight: normal;     -fx-padding: 10 20;     -fx-background-radius: 15;     -fx-cursor: hand;     -fx-border-width: 1;     -fx-border-radius: 15;     -fx-border-color: #FF5722;     -fx-shadow-highlight-color: transparent;     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 1, 1);" text="Назад">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="TelephoneNumber" layoutX="130.0" layoutY="120.0" prefHeight="48.0" prefWidth="250.0" promptText="Введіть номер тел..." />
+            <TextField fx:id="PlaceOfResidence" layoutX="130.0" layoutY="220.0" prefHeight="48.0" prefWidth="250.0" promptText="Введіть місце проживання..." />
+            <TextField fx:id="DateOfBirth" layoutX="130.0" layoutY="320.0" prefHeight="48.0" prefWidth="250.0" promptText="Введіть дату народження..." />
+            <TextField fx:id="NameSurname" layoutX="130.0" layoutY="26.0" prefHeight="48.0" prefWidth="250.0" promptText="Введіть прізвище ім'я..." />
+            <Label fx:id="Label2" layoutX="130.0" layoutY="86.0" prefHeight="18.0" prefWidth="250.0" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label fx:id="Label3" layoutX="130.0" layoutY="182.0" prefHeight="18.0" prefWidth="250.0" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label fx:id="Label4" layoutX="130.0" layoutY="279.0" prefHeight="18.0" prefWidth="250.0" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+            <Label fx:id="Label5" layoutX="116.0" layoutY="380.0" prefHeight="18.0" prefWidth="257.0" textFill="RED">
+               <font>
+                  <Font size="11.0" />
+               </font></Label>
+         </children>
+      </Pane>
+      <Button fx:id="iconButton2" layoutX="90.0" layoutY="119.0" minWidth="30.0" mnemonicParsing="false" onAction="#onIconButton2Click" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: transparent;">
+         <graphic>
+            <ImageView fx:id="iconImageView2" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+      <Button fx:id="iconButton3" layoutX="237.0" layoutY="119.0" minWidth="30.0" mnemonicParsing="false" onAction="#onIconButton3Click" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: transparent;">
+         <graphic>
+            <ImageView fx:id="iconImageView3" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+      <Button fx:id="iconButton4" layoutX="384.0" layoutY="119.0" minWidth="30.0" mnemonicParsing="false" onAction="#onIconButton4Click" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-border-color: transparent; -fx-text-fill: transparent;">
+         <graphic>
+            <ImageView fx:id="iconImageView4" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic></Button>
+      <Rectangle fx:id="Line1" arcHeight="5.0" arcWidth="5.0" height="4.0" layoutX="222.0" layoutY="156.0" stroke="BLACK" strokeType="INSIDE" style="-fx-stroke: transparent; -fx-fill: #9e0202;" width="60.0" />
+      <Pane fx:id="Pane3" layoutX="359.0" layoutY="56.0" prefHeight="55.0" prefWidth="145.0" visible="false">
+         <children>
+            <Button fx:id="quit" layoutX="-3.0" mnemonicParsing="false" onAction="#quit" prefHeight="54.0" prefWidth="152.0" style="-fx-background-color: linear-gradient(to right, #FF7F32, #FF5722);     -fx-text-fill: #FFFFFF;     -fx-font-size: 18px;     -fx-font-weight: normal;     -fx-padding: 10 20;     -fx-background-radius: 15;     -fx-cursor: hand;     -fx-border-width: 1;     -fx-border-radius: 15;     -fx-border-color: #FF5722;     -fx-shadow-highlight-color: transparent;     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 1, 1);" text="Вийти">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane4" layoutY="160.0" prefHeight="453.0" prefWidth="504.0" visible="false">
+         <children>
+            <ScrollPane fx:id="ScrollPane2" hbarPolicy="NEVER" layoutY="25.0" prefHeight="370.0" prefWidth="504.0">
+               <content>
+                  <VBox fx:id="buttonContainer2" prefWidth="504.0" spacing="5.0" />
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+      <Pane fx:id="Pane5" layoutX="1.0" layoutY="160.0" prefHeight="453.0" prefWidth="504.0" visible="false">
+         <children>
+            <Button fx:id="iconButton5" layoutX="127.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleLoadImage" prefHeight="48.0" prefWidth="250.0" style="     -fx-background-color: linear-gradient(to right, #FF7F32, #FF5722);     -fx-text-fill: #FFFFFF;     -fx-font-size: 18px;     -fx-font-weight: normal;     -fx-padding: 10 20;     -fx-background-radius: 15;     -fx-cursor: hand;     -fx-border-width: 1;     -fx-border-radius: 15;     -fx-border-color: #FF5722;     -fx-shadow-highlight-color: transparent;     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 1, 1);" text="Змінити аватар " />
+         </children>
+      </Pane>
+      <Circle fx:id="Circle" fill="DODGERBLUE" layoutX="49.0" layoutY="36.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <Pane fx:id="Pane6" layoutX="11.0" layoutY="167.0" prefHeight="453.0" prefWidth="504.0" visible="false">
+         <children>
+            <Button fx:id="buttonBack2" layoutX="20.0" layoutY="380.0" mnemonicParsing="false" onAction="#onButtonBackClick2" prefHeight="60.0" prefWidth="100.0" style="     -fx-background-color: linear-gradient(to right, #FF7F32, #FF5722);     -fx-text-fill: #FFFFFF;     -fx-font-size: 18px;     -fx-font-weight: normal;     -fx-padding: 10 20;     -fx-background-radius: 15;     -fx-cursor: hand;     -fx-border-width: 1;     -fx-border-radius: 15;     -fx-border-color: #FF5722;     -fx-shadow-highlight-color: transparent;     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 1, 1);" text="Назад">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="TelephoneNumber2" layoutX="127.0" layoutY="120.0" prefHeight="48.0" prefWidth="250.0" promptText="Введіть номер тел..." />
+            <TextField fx:id="PlaceOfResidence2" layoutX="127.0" layoutY="212.0" prefHeight="48.0" prefWidth="250.0" promptText="Введіть місце проживання..." />
+            <TextField fx:id="DateOfBirth2" layoutX="127.0" layoutY="297.0" prefHeight="48.0" prefWidth="250.0" promptText="Введіть дату народження..." />
+            <TextField fx:id="NameSurname2" layoutX="127.0" layoutY="35.0" prefHeight="48.0" prefWidth="250.0" promptText="Введіть номер тел..." />
+         </children>
+      </Pane>
+   </children>
+</Pane>

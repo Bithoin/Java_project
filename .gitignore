@@ -1,0 +1,33 @@
+### Maven / Build ###
+target/
+out/
+*.class
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+
+### OS ###
+.DS_Store
+
+### VS Code ###
+.vscode/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### Eclipse ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### Maven Wrapper ###
+.mvn/wrapper/maven-wrapper.jar

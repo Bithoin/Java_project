@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="282.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.anton.contactbook.LoginController">
+   <children>
+       <Label alignment="CENTER" prefHeight="61.0" prefWidth="600.0" style="-fx-background-color: #FF6347; -fx-font-weight: bolder;" text="Контактна Книга" textAlignment="CENTER">
+           <font>
+               <Font size="29.0" />
+           </font>
+           <effect>
+               <InnerShadow />
+           </effect>
+       </Label>
+      <Label layoutX="268.0" layoutY="77.0" prefHeight="35.0" prefWidth="65.0" text="Логін">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="174.0" text="Пароль">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="TextField5" layoutX="154.0" layoutY="223.0" prefHeight="35.0" prefWidth="289.0" promptText="Введіть пароль...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="TextField4" layoutX="154.0" layoutY="124.0" prefHeight="35.0" prefWidth="289.0" promptText="Введіть логін...">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="226.0" mnemonicParsing="false" onAction="#onBackClick" prefHeight="43.0" prefWidth="92.0" style="-fx-background-color: linear-gradient(to right, #FF7F32, #FF5722);     -fx-text-fill: #FFFFFF;     -fx-font-size: 15px;     -fx-font-weight: normal;     -fx-padding: 10 20;     -fx-background-radius: 15;     -fx-cursor: hand;     -fx-border-width: 1;     -fx-border-radius: 15;     -fx-border-color: #FF5722;     -fx-shadow-highlight-color: transparent;     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 1, 1);" text="Назад">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Button fx:id="btnFurther" layoutX="514.0" layoutY="226.0" mnemonicParsing="false" onAction="#onFurtherClick" prefHeight="35.0" prefWidth="72.0" style="-fx-background-color: linear-gradient(to right, #FF7F32, #FF5722);     -fx-text-fill: #FFFFFF;     -fx-font-size: 15px;     -fx-font-weight: normal;     -fx-padding: 10 20;     -fx-background-radius: 15;     -fx-cursor: hand;     -fx-border-width: 1;     -fx-border-radius: 15;     -fx-border-color: #FF5722;     -fx-shadow-highlight-color: transparent;     -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 1, 1);" text="Далі">
+         <font>
+            <Font size="17.0" />
+         </font></Button>
+      <Label fx:id="messageLabel4" alignment="CENTER" layoutX="154.0" layoutY="160.0" prefHeight="17.0" prefWidth="289.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="messageLabel5" alignment="CENTER" layoutX="98.0" layoutY="259.0" prefHeight="17.0" prefWidth="402.0" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+       
+   </children>
+</Pane>
